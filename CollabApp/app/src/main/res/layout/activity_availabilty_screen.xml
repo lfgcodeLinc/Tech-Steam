@@ -8,9 +8,27 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".AvailabiltyScreen">
 
-    <TextView
-        android:text="@string/hello_world"
+    <RatingBar
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ratingBar">
+
+        <TextView
+            android:layout_width="107dp"
+            android:layout_height="28dp"
+            android:text="New Text"
+            android:id="@+id/textView"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
 
 </RelativeLayout>
